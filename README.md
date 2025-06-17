@@ -1,10 +1,10 @@
-# 🐄 MooTrack: Real-Time Leopard Risk Alert System for Cattle 🐆
+# 🐄 MooTrack: Real-Time Leopard Risk Alert System for Cattle 
 
 **Built for the AES Hackathon 2025 | Powered by ML, Twilio & GPS**
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 Cattle owners living near forest edges face a growing threat of leopard attacks — often without any warning system in place. **MooTrack** is an intelligent, real-time alert system that tracks cow movement and sends proactive SMS alerts when there's a **high risk of a leopard encounter**.
 
@@ -12,7 +12,7 @@ We combine **GPS**, **machine learning**, and **Twilio-based SMS alerts** to bui
 
 ---
 
-## 🌱 Inspiration
+## Inspiration
 
 Growing up near the Western Ghats, I’ve seen firsthand the emotional and economic damage caused by leopard attacks on livestock. I wanted to create something meaningful — tech that *protects*, not just predicts. MooTrack is my ode to nature and engineering.
 
@@ -31,7 +31,7 @@ Growing up near the Western Ghats, I’ve seen firsthand the emotional and econo
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 1. **Cow GPS data** is simulated or live-fed into the system.
 2. ML model (`risk_predictor_model.pkl`) predicts **leopard attack risk** (LOW, MEDIUM, HIGH).
@@ -43,7 +43,7 @@ Growing up near the Western Ghats, I’ve seen firsthand the emotional and econo
 
 ---
 
-## 📊 ML Model Details
+##  ML Model Details
 
 - Model: XGBoost Classifier
 - Input Features:
@@ -58,7 +58,7 @@ Growing up near the Western Ghats, I’ve seen firsthand the emotional and econo
 
 ---
 
-## 🔒 Security
+## Security
 
 All sensitive data like:
 - MongoDB URI  
@@ -67,17 +67,17 @@ are **securely stored using `st.secrets`**, ensuring zero secrets leak on GitHub
 
 ---
 
-## 📦 Features
+## Features
 
-- 🗺️ Live cow location tracking  
-- 🔔 Real-time leopard risk alerts  
-- 📤 Twilio SMS integration  
-- 📈 Risk prediction using ML  
-- 💾 MongoDB backend
+- Live cow location tracking  
+- Real-time leopard risk alerts  
+- Twilio SMS integration  
+- Risk prediction using ML  
+- MongoDB backend
 
 ---
 
-## 🧪 Challenges Faced
+## Challenges Faced
 
 - Escaping special characters in secret strings (`@` was brutal 😅)
 - GitHub push protection blocking commits with detected secrets
@@ -90,10 +90,10 @@ But hey — we made it!
 
 ## 🎉 Accomplishments
 
-- ⏱️ Deployed an end-to-end working MVP in under 3 days
-- 💌 Built a functional, non-spammy Twilio SMS alert system
-- 🎯 Hit 90%+ ML accuracy with minimal features
-- 🌍 Built something that matters to rural communities
+- Deployed an end-to-end working MVP in under 3 days
+- Built a functional, non-spammy Twilio SMS alert system
+- Hit 90%+ ML accuracy with minimal features
+- Built something that matters to rural communities
 
 ---
 
