@@ -26,7 +26,7 @@ Growing up near the Western Ghats, I’ve seen firsthand the emotional and econo
 | `Streamlit`    | Interactive web interface         |
 | `Twilio`       | SMS alert system                  |
 | `MongoDB Atlas`| Store GPS + metadata              |
-| `sklearn`      | Risk prediction model (XGBoost)   |
+| `sklearn`      | Risk prediction model    |
 | `GitHub`       | Version control + documentation   |
 
 ---
@@ -108,7 +108,7 @@ But hey — we made it!
 
 ## 📽️ Demo
 
-🎥 **Watch the full demo:** [YouTube Link Here](#)  
+🎥 **Watch the full demo:** [YouTube Link Here](https://youtu.be/47vgPwIWSWw?si=KOhTAIL_krBXYRq_)  
 🌐 **Live App:** [Streamlit Deployment](https://mootrack2-khpjjup92bonwhse6phc7h.streamlit.app/)
 
 ---
