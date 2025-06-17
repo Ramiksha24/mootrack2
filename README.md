@@ -123,4 +123,4 @@ Love for nature, code, and a deep respect for farmers.
 
 ## 📫 Contact
 
-Connect with me on [LinkedIn](www.linkedin.com/in/ramiksha-c-shetty) | [GitHub](https://github.com/Ramiksha24)  
+Connect with me on [LinkedIn](https://www.linkedin.com/in/ramiksha-c-shetty-93105b258/) | [GitHub](https://github.com/Ramiksha24)  
