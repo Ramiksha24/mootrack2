@@ -34,19 +34,19 @@ def load_ml_models():
                 if os.path.exists(model_path) and os.path.exists(encoder_path):
                     model = joblib.load(model_path)
                     encoder = joblib.load(encoder_path)
-                    st.success(f"✅ Models loaded from: {model_path}")
+                    st.success(f"Models loaded from: {model_path}")
                     return model, encoder, True
             except Exception as e:
                 continue
         
         # If we get here, no models were found
-        st.error("🚫 ML model files not found. Available files:")
+        st.error(" ML model files not found. Available files:")
         current_dir = os.listdir(".")
         st.write(current_dir)
         return None, None, False
         
     except Exception as e:
-        st.error(f"🚫 Error loading ML models: {str(e)}")
+        st.error(f"Error loading ML models: {str(e)}")
         return None, None, False
 
 # Load the models
@@ -59,22 +59,12 @@ model, encoder, model_loaded = load_ml_models()
 def init_mongodb():
     """Initialize MongoDB connection"""
     try:
-        # Try to use secrets first, fallback to hardcoded for now
-        if "mongo" in st.secrets:
-            mongo_uri = st.secrets["mongo"]["connection_string"]
-        else:
-            # Fallback to your existing connection (move to secrets later)
-            mongo_uri = "mongodb+srv://RamikshaShetty:Rami%409632@mootrack.felumhi.mongodb.net/?retryWrites=true&w=majority&appName=mootrack"
-        
+        mongo_uri = st.secrets["mongo"]["connection_string"]
         client = pymongo.MongoClient(mongo_uri)
-        # Test the connection
-        client.admin.command('ping')
-        db = client["mootrack"]
-        st.success("✅ Connected to MongoDB")
-        return db, client, True
+        return client
     except Exception as e:
-        st.error(f"🚫 MongoDB connection failed: {str(e)}")
-        return None, None, False
+        st.error(f"MongoDB connection failed: {e}")
+        return None
 
 # Initialize MongoDB
 db, client, db_connected = init_mongodb()
@@ -88,7 +78,7 @@ else:
     cow_locations = None
     leopard_sightings = None
     forest_zones = None
-    st.error("🚫 Cannot access database collections - MongoDB connection failed")
+    st.error("Cannot access database collections - MongoDB connection failed")
     st.stop()
 
 # -----------------------
