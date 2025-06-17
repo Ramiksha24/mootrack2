@@ -61,10 +61,15 @@ def init_mongodb():
     try:
         mongo_uri = st.secrets["mongo"]["connection_string"]
         client = pymongo.MongoClient(mongo_uri)
-        return client
+        
+        # Get a specific DB name from URI or fallback
+        db = client.get_database("mootrack")  # or whatever your DB name is
+        return db, client, True
     except Exception as e:
-        st.error(f"MongoDB connection failed: {e}")
-        return None
+        st.error(f"🚫 MongoDB connection failed: {e}")
+        return None, None, False
+
+        
 
 # Initialize MongoDB
 db, client, db_connected = init_mongodb()
