@@ -333,21 +333,7 @@ else:
 # -----------------------
 if not db_connected:
     st.error("🔧 **Troubleshooting MongoDB Connection**")
-    st.markdown("""
-    **Common issues and solutions:**
     
-    1. **Network Access**: Check if your IP address is whitelisted in MongoDB Atlas
-    2. **Credentials**: Verify username/password are correct
-    3. **Connection String**: Ensure the connection string is properly formatted
-    4. **Firewall**: Check if your firewall is blocking MongoDB connections (port 27017)
-    
-    **Quick fixes to try:**
-    - Restart your internet connection
-    - Check MongoDB Atlas dashboard for connection issues
-    - Try connecting from a different network
-    - Update your IP whitelist in MongoDB Atlas
-    """)
-
 # -----------------------
 # Footer
 # -----------------------
