@@ -1,6 +1,6 @@
 # 🐄 MooTrack: Real-Time Leopard Risk Alert System for Cattle 
 
-**Built for the AES Hackathon 2025 | Powered by ML, Twilio & GPS**
+**Built for the AI in action Hackathon 2025 | Powered by ML, MongoDB,  Twilio & GPS**
 
 ---
 
