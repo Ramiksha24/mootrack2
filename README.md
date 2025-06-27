@@ -84,7 +84,7 @@ are **securely stored using `st.secrets`**, ensuring zero secrets leak on GitHub
 - Getting Streamlit + Twilio to sync in real-time with secure API handling
 - Repeated model retraining + .pkl regeneration cycles
 
-But hey — we made it!
+But hey — I made it!
 
 ---
 
