@@ -1,6 +1,7 @@
 # 🐄 MooTrack: Real-Time Leopard Risk Alert System for Cattle 
 
 **Built for the AI in action Hackathon 2025 | Powered by ML, MongoDB,  Twilio & GPS**
+🌐 **Live App:** [Streamlit Deployment](https://mootrack2-khpjjup92bonwhse6phc7h.streamlit.app/)
 
 ---
 
@@ -109,7 +110,7 @@ But hey — I made it!
 ## 📽️ Demo
 
 🎥 **Watch the full demo:** [YouTube Link Here](https://youtu.be/47vgPwIWSWw?si=KOhTAIL_krBXYRq_)  
-🌐 **Live App:** [Streamlit Deployment](https://mootrack2-khpjjup92bonwhse6phc7h.streamlit.app/)
+
 
 ---
 
